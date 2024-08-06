@@ -16,6 +16,7 @@ Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.ExtraSetupStepsURI=
 Meta.Prerequsites=[]
+Meta.AppConfigId=1a088c8c-7fa1-47ce-9a33-003f75905836
 App.DisplayName=Spellmasons Server
 App.RootDir=./main/
 App.BaseDirectory=./main/
