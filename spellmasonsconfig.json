@@ -1,0 +1,49 @@
+[
+    {
+        "DisplayName":"Spellmasons Version",
+        "Category":"Spellmasons Settings",
+        "Description":"Set what version of the game to download the server for.",
+        "Keywords":"server,version",
+        "FieldName":"ServerVersion",
+        "InputType":"enum",
+        "IsFlagArgument":false,
+        "ParamFieldName":"ServerVersion",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"1.39.1",
+        "EnumValues":{
+            "Latest":"Latest/Beta",
+            "1.39.1":"v1.39.1",
+            "Manual":"Custom Version"
+        }
+    },
+    {
+        "DisplayName":"Custom Server Version",
+        "Category":"Spellmason Settings",
+        "Description":"Sets what version of the server to download if \"Custom Version\" is chosen under \"Spellmasons Version\".",
+        "Keywords":"custom,version",
+        "FieldName":"CustomVersion",
+        "InputType":"text",
+        "IsFlagArgument":false,
+        "ParamFieldName":"CustomVersion",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"1.39.1",
+        "Placeholder":"1.39.1",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Disable Node.js Download",
+        "Category":"Node - Settings",
+        "Description":"If set, Node.js will not be downloaded and installed when the server is updated. Saves on bandwidth if you don't need to change the already installed Node.js version.",
+        "Keywords":"node,nodejs,download,update",
+        "FieldName":"DisableNodeDownload",
+        "InputType":"checkbox",
+        "IsFlagArgument":false,
+        "ParamFieldName":"DisableNodeDownload",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+        "EnumValues":{
+            "False":"false",
+            "True":"true"
+        }
+    }
+]

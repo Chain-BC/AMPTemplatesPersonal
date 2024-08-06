@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "Both",
+        "Port": 9055,
+        "Ref": "ServerPort",
+        "Name": "Main Port",
+        "Description": "Main port used by the game."
+    }
+]
