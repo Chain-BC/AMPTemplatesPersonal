@@ -108,7 +108,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd main/Spellmasons && tsc --project tsconfig.headless.json --outDir headless-server-build/ && cp package-lock.json headless-server-build/ && cp public/spellmasons-mods/build/SpellmasonsMods.cjs.js headless-server-build/src/SpellmasonsMods.cjs.js && cd headless-server-build/ && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" install --omit=dev'",
+        "UpdateSourceArgs":"-c 'cd {{$FullBaseDir}}/Spellmasons && \"node_modules/.bin/tsc\" --project tsconfig.headless.json --outDir headless-server-build/ && cp package-lock.json headless-server-build/ && cp public/spellmasons-mods/build/SpellmasonsMods.cjs.js headless-server-build/src/SpellmasonsMods.cjs.js && cd headless-server-build/ && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" install --omit=dev'",
         "UpdateSourceConditionSetting":"",
         "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
