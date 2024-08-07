@@ -28,7 +28,7 @@ App.WindowsCommandLineArgs=
 App.CommandLineArgs="headless-server-build/src/HeadlessServer.js"
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"PORT": {{PortReference}}}
+App.EnvironmentVariables={"PORT": {{ServerPort}}}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=Kill
