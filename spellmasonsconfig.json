@@ -12,7 +12,6 @@
         "DefaultValue":"Latest",
         "EnumValues":{
             "Latest":"Latest/Beta",
-            "v1.39.1":"v1.39.1",
             "Manual":"Custom Version"
         }
     },
@@ -26,7 +25,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"CustomVersion",
         "IncludeInCommandLine":false,
-        "DefaultValue":"",
+        "DefaultValue":"v1.39.1",
         "Placeholder":"v1.39.1",
         "EnumValues":{}
     },
