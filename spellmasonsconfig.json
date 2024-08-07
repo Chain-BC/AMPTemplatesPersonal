@@ -9,7 +9,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"ServerVersion",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.39.1",
+        "DefaultValue":"Latest",
         "EnumValues":{
             "Latest":"Latest/Beta",
             "1.39.1":"v1.39.1",
@@ -18,7 +18,7 @@
     },
     {
         "DisplayName":"Custom Server Version",
-        "Category":"Spellmason Settings",
+        "Category":"Spellmasons Settings",
         "Description":"Sets what version of the server to download if \"Custom Version\" is chosen under \"Spellmasons Version\".",
         "Keywords":"custom,version",
         "FieldName":"CustomVersion",
@@ -32,7 +32,7 @@
     },
     {
         "DisplayName":"Disable Node.js Download",
-        "Category":"Node - Settings",
+        "Category":"Spellmasons Settings",
         "Description":"If set, Node.js will not be downloaded and installed when the server is updated. Saves on bandwidth if you don't need to change the already installed Node.js version.",
         "Keywords":"node,nodejs,download,update",
         "FieldName":"DisableNodeDownload",

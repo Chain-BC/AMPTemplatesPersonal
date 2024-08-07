@@ -95,8 +95,8 @@
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
         "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}Spellmasons/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i'",
-        "UpdateSourceConditionSetting":"NpmInstallType",
-        "UpdateSourceConditionValue":"npmi",
+        "UpdateSourceConditionSetting":"",
+        "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
     },
     {
@@ -105,8 +105,8 @@
         "UpdateSource":"Executable",
         "UpdateSourceData":"cmd.exe",
         "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}Spellmasons\\\" && \"{{$FullBaseDir}}node\\node\" \"{{$FullBaseDir}}node\\node_modules\\npm\\bin\\npm-cli.js\" i",
-        "UpdateSourceConditionSetting":"NpmInstallType",
-        "UpdateSourceConditionValue":"npmi",
+        "UpdateSourceConditionSetting":"",
+        "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
     },
 	{
