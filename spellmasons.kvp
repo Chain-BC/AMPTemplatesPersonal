@@ -1,6 +1,6 @@
 Meta.DisplayName=Spellmasons Server
 Meta.Description=Spellmasons Dedicated Server
-Meta.OS=Both
+Meta.OS=Linux, Windows
 Meta.AarchSupport=Native
 Meta.Arch=All
 Meta.Author=Chain-BC
