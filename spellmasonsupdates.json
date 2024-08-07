@@ -10,7 +10,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd {{$FullBaseDir}}Spellmasons && git init && git remote add origin git@github.com:jdoleary/Spellmasons.git && git fetch && git checkout master'",
+        "UpdateSourceArgs":"-c 'cd {{$FullBaseDir}}Spellmasons && git init && git remote add origin git@github.com:jdoleary/Spellmasons.git && git fetch && git pull origin master'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
