@@ -9,7 +9,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"ServerVersion",
         "IncludeInCommandLine":false,
-        "DefaultValue":"Latest",
+        "DefaultValue":"Manual",
         "EnumValues":{
             "Latest":"Latest/Beta",
             "Manual":"Custom Version"
