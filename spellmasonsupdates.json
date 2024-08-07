@@ -1,16 +1,10 @@
 [
     {
-        "UpdateStageName":"Spellmasons Files Creation Directory",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}Spellmasons"
-    },
-    {
         "UpdateStageName":"Application Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd main/Spellmasons && git clone https://github.com/jdoleary/Spellmasons.git'",
+        "UpdateSourceArgs":"-c 'git clone https://github.com/jdoleary/Spellmasons.git'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
