@@ -23,15 +23,15 @@ App.BaseDirectory=./main/
 App.ExecutableWin=node\node.exe
 App.ExecutableLinux=./node/bin/node
 App.WorkingDir=Spellmasons
-App.LinuxCommandLineArgs=
-App.WindowsCommandLineArgs=
+App.LinuxCommandLineArgs=export PORT={{$ApplicationPort1}}
+App.WindowsCommandLineArgs=PORT={{$ApplicationPort1}}
 App.CommandLineArgs="headless-server-build/src/HeadlessServer.js"
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"PORT": {{$ApplicationPort1}}}
+App.EnvironmentVariables={}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
-App.ExitMethod=Kill
+App.ExitMethod=CtrlC
 App.ExitTimeout=30
 App.ExitString=stop
 App.ExitFile=lock
