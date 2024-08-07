@@ -142,7 +142,7 @@
 	{
         "UpdateStageName":"Buiding Server",
         "UpdateSourcePlatform":"Windows",
-        "UpdateSource":"Executable",
+        "UpdateSource":"powershell.exe",
         "UpdateSourceData":"/bin/bash",
         "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH%; cd \"{{$FullBaseDir}}Spellmasons\\\"; \"node_modules\\.bin\\tsc\\\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}Spellmasons\\headless-server-build\\; cp package-lock.json headless-server-build\\; cp public\\spellmasons-mods\\build\\SpellmasonsMods.cjs.js headless-server-build\\src\\SpellmasonsMods.cjs.js; cd headless-server-build\\; \"{{$FullBaseDir}}node\\node.exe\" \"{{$FullBaseDir}}node\\npm\" i --omit=dev",
         "UpdateSourceConditionSetting":"",
