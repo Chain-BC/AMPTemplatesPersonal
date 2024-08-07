@@ -3,7 +3,7 @@
         "Protocol": "Both",
         "Port": 9055,
         "Ref": "ServerPort",
-        "Name": "Main Port",
+        "Name": "Server Port",
         "Description": "Main port used by the game."
     }
 ]

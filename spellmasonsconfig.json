@@ -12,7 +12,7 @@
         "DefaultValue":"Latest",
         "EnumValues":{
             "Latest":"Latest/Beta",
-            "1.39.1":"v1.39.1",
+            "v1.39.1":"v1.39.1",
             "Manual":"Custom Version"
         }
     },
@@ -26,14 +26,14 @@
         "IsFlagArgument":false,
         "ParamFieldName":"CustomVersion",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.39.1",
-        "Placeholder":"1.39.1",
+        "DefaultValue":"",
+        "Placeholder":"v1.39.1",
         "EnumValues":{}
     },
     {
         "DisplayName":"Disable Node.js Download",
         "Category":"Spellmasons Settings",
-        "Description":"If set, Node.js will not be downloaded and installed when the server is updated. Saves on bandwidth if you don't need to change the already installed Node.js version.",
+        "Description":"If set, Node.js will not be downloaded and installed when the server is updated. Saves on bandwidth as it is unnecessary to install it again after the first run.",
         "Keywords":"node,nodejs,download,update",
         "FieldName":"DisableNodeDownload",
         "InputType":"checkbox",
