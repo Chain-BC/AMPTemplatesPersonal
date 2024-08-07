@@ -25,10 +25,10 @@ App.ExecutableLinux=./node/bin/node
 App.WorkingDir=Spellmasons
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
-App.CommandLineArgs="PORT={{$ApplicationPort1}} headless-server-build/src/HeadlessServer.js"
+App.CommandLineArgs="headless-server-build/src/HeadlessServer.js"
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={}
+App.EnvironmentVariables={"PORT": 9055}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=Kill
