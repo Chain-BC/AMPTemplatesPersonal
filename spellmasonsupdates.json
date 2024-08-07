@@ -30,7 +30,7 @@
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
         "UpdateSourceData":"powershell.exe",
-        "UpdateSourceArgs":"cd {{$FullBaseDir}}Spellmasons; Remove-Item {{$FullBaseDir}}Spellmasons -Force -Recurse -Verbose; git clone https://github.com/jdoleary/Spellmasons.git .",
+        "UpdateSourceArgs":"cd {{$FullBaseDir}}Spellmasons; Remove-Item {{$FullBaseDir}}Spellmasons\\ -Force -Recurse -Verbose; git clone https://github.com/jdoleary/Spellmasons.git .",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
@@ -40,7 +40,7 @@
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
         "UpdateSourceData":"powershell.exe",
-        "UpdateSourceArgs":"cd {{$FullBaseDir}}Spellmasons; Remove-Item {{$FullBaseDir}}Spellmasons -Force -Recurse -Verbose; git clone https://github.com/jdoleary/Spellmasons.git . -b {{CustomVersion}}",
+        "UpdateSourceArgs":"cd {{$FullBaseDir}}Spellmasons; Remove-Item {{$FullBaseDir}}Spellmasons\\ -Force -Recurse -Verbose; git clone https://github.com/jdoleary/Spellmasons.git . -b {{CustomVersion}}",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Manual",
         "SkipOnFailure":false
