@@ -23,9 +23,9 @@ App.BaseDirectory=./main/
 App.ExecutableWin=node\node.exe
 App.ExecutableLinux=./node/bin/node
 App.WorkingDir=Spellmasons
-App.LinuxCommandLineArgs=export PORT={{$ApplicationPort1}} "headless-server-build/src/HeadlessServer.js"
-App.WindowsCommandLineArgs=PORT={{$ApplicationPort1}} "headless-server-build/src/HeadlessServer.js"
-App.CommandLineArgs=
+App.LinuxCommandLineArgs=
+App.WindowsCommandLineArgs=
+App.CommandLineArgs="headless-server-build/src/HeadlessServer.js"
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={}
