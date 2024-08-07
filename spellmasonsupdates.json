@@ -94,7 +94,7 @@
         "SkipOnFailure":false
     },
     {
-        "UpdateStageName":"Installing Necessary npm Packages"
+        "UpdateStageName":"Installing Necessary npm Packages",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
