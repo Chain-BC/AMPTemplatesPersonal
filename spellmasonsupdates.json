@@ -20,7 +20,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'git -C {{$FullBaseDir}}Spellmasons reset --hard {{CustomVersion}} || git -C {{$FullBaseDir}}Spellmasons fetch https://github.com/jdoleary/Spellmasons.git {{CustomVersion}}|| git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons -b {{CustomVersion}}'",
+        "UpdateSourceArgs":"-c 'git -C {{$FullBaseDir}}Spellmasons reset --hard {{CustomVersion}} || git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons -b {{CustomVersion}}'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Manual",
         "SkipOnFailure":false
