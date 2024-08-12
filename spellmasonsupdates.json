@@ -10,7 +10,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons || git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git'",
+        "UpdateSourceArgs":"-c 'git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
