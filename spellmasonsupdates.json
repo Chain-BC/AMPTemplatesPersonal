@@ -3,7 +3,7 @@
         "UpdateStageName":"Spellmasons Folder Creation",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}Spellmasons",
+        "UpdateSourceArgs":"{{$FullBaseDir}}Spellmasons"
     },
     {
         "UpdateStageName":"Downloading Server",
