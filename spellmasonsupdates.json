@@ -10,7 +10,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git || git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}/Spellmasons'",
+        "UpdateSourceArgs":"-c 'git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git || git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
@@ -20,7 +20,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd main/Spellmasons && git clone https://github.com/jdoleary/Spellmasons.git main/Spellmasons -b {{CustomVersion}} || git pull https://github.com/jdoleary/Spellmasons.git {{CustomVersion}}'",
+        "UpdateSourceArgs":"git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git {{CustomVersion}} || git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons -b {{CustomVersion}}'",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Manual",
         "SkipOnFailure":false
