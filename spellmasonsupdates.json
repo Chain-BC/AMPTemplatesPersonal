@@ -134,7 +134,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd {{$FullBaseDir}}Spellmasons && \"node_modules/.bin/tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}Spellmasons/headless-server-build/ && cp package-lock.json headless-server-build/ && cp public/spellmasons-mods/build/SpellmasonsMods.cjs.js headless-server-build/src/SpellmasonsMods.cjs.js && cd headless-server-build/ && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i --omit=dev'",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd {{$FullBaseDir}}Spellmasons && \"node_modules/.bin/tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}headless-server-build/ && cp package-lock.json {{$FullBaseDir}}headless-server-build/ && cp public/spellmasons-mods/build/SpellmasonsMods.cjs.js {{$FullBaseDir}}headless-server-build/src/SpellmasonsMods.cjs.js && cd {{$FullBaseDir}}headless-server-build/ && npm i --omit=dev'",
         "UpdateSourceConditionSetting":"",
         "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
@@ -143,8 +143,8 @@
         "UpdateStageName":"Buiding Server",
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
-        "UpdateSourceData":"powershell.exe",
-        "UpdateSourceArgs":"set PATH={{$FullBaseDir}}node;%PATH%; cd \"{{$FullBaseDir}}Spellmasons\\\"; \"node_modules\\.bin\\tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}Spellmasons\\headless-server-build\\; cp package-lock.json headless-server-build\\; cp public\\spellmasons-mods\\build\\SpellmasonsMods.cjs.js headless-server-build\\src\\SpellmasonsMods.cjs.js; cd headless-server-build\\; \"{{$FullBaseDir}}node\\npm\" i --omit=dev",
+        "UpdateSourceData":"cmd.exe",
+        "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}Spellmasons\\\" && \"node_modules\\.bin\\tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}headless-server-build\\ && copy package-lock.json {{$FullBaseDir}}headless-server-build\\ && copy public\\spellmasons-mods\\build\\SpellmasonsMods.cjs.js {{$FullBaseDir}}headless-server-build\\src\\SpellmasonsMods.cjs.js && cd {{$FullBaseDir}}headless-server-build\\ && npm i --omit=dev",
         "UpdateSourceConditionSetting":"",
         "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
