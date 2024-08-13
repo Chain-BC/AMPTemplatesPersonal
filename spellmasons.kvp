@@ -21,7 +21,6 @@ App.RootDir=./main/
 App.BaseDirectory=./main/
 App.ExecutableWin=node\node.exe
 App.ExecutableLinux=./node/bin/node
-App.WorkingDir=Spellmasons
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs="headless-server-build/src/HeadlessServer.js"
