@@ -29,8 +29,8 @@
         "UpdateStageName":"Downloading Server",
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
-        "UpdateSourceData":"powershell.exe",
-        "UpdateSourceArgs":"cd {{$FullBaseDir}}Spellmasons; Remove-Item {{$FullBaseDir}}Spellmasons\\* -Recurse -Force; git clone https://github.com/jdoleary/Spellmasons.git .",
+        "UpdateSourceData":"cmd.exe",
+        "UpdateSourceArgs":"/C git -C {{$FullBaseDir}}Spellmasons pull https://github.com/jdoleary/Spellmasons.git || git clone https://github.com/jdoleary/Spellmasons.git {{$FullBaseDir}}Spellmasons",
         "UpdateSourceConditionSetting":"ServerVersion",
         "UpdateSourceConditionValue":"Latest",
         "SkipOnFailure":false
@@ -143,8 +143,8 @@
         "UpdateStageName":"Buiding Server",
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
-        "UpdateSourceData":"cmd.exe",
-        "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}Spellmasons\\\" && \"node_modules\\.bin\\tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}Spellmasons\\headless-server-build\\ && cp package-lock.json headless-server-build\\ && cp public\\spellmasons-mods\\build\\SpellmasonsMods.cjs.js headless-server-build\\src\\SpellmasonsMods.cjs.js && cd headless-server-build\\ && \"{{$FullBaseDir}}node\\npm\" i --omit=dev",
+        "UpdateSourceData":"powershell.exe",
+        "UpdateSourceArgs":"set PATH={{$FullBaseDir}}node;%PATH%; cd \"{{$FullBaseDir}}Spellmasons\\\"; \"node_modules\\.bin\\tsc\" --project tsconfig.headless.json --outDir {{$FullBaseDir}}Spellmasons\\headless-server-build\\; cp package-lock.json headless-server-build\\; cp public\\spellmasons-mods\\build\\SpellmasonsMods.cjs.js headless-server-build\\src\\SpellmasonsMods.cjs.js; cd headless-server-build\\; \"{{$FullBaseDir}}node\\npm\" i --omit=dev",
         "UpdateSourceConditionSetting":"",
         "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
