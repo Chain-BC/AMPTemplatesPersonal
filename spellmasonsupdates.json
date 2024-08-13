@@ -124,7 +124,7 @@
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
         "UpdateSourceData":"cmd.exe",
-        "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}Spellmasons\\\" && \"{{$FullBaseDir}}node\\node\" \"{{$FullBaseDir}}node\\node_modules\\npm\\bin\\npm-cli.js\" i",
+        "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}Spellmasons\\\" && npm i",
         "UpdateSourceConditionSetting":"",
         "UpdateSourceConditionValue":"",
         "SkipOnFailure":false
